@@ -43,11 +43,11 @@ export class SchedaUtenteComponent implements OnInit{
         //   console.log('Nessun dato utente trovato nella Local Storage');
         // }
         
-        localStorage.setItem('datiUtente', JSON.stringify({
-          nome: 'Luigi',
-          cognome: 'Rossi',
-          email: 'luigi.rossi@example.com'
-        }));
+        // localStorage.setItem('datiUtente', JSON.stringify({
+        //   nome: 'Luigi',
+        //   cognome: 'Rossi',
+        //   email: 'luigi.rossi@example.com'
+        // }));
 
         const userData = localStorage.getItem('datiUtente');
         if (userData) {
