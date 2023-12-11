@@ -10,9 +10,10 @@ import { InserimentoUtenteComponent } from './inserimento-utente/inserimento-ute
 import { SchedaUtenteComponent } from './scheda-utente/scheda-utente.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inserimento-ticket-form.component';
-
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
+import { ModificaUtenteModalComponent } from './modifica-utente-modal/modifica-utente-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     SchedaUtenteComponent,
     HomeAdminComponent,
     InserimentoTicketFormComponent,
+    ModificaUtenteModalComponent,
   ],
   imports: [
     BrowserModule,
