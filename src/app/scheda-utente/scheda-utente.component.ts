@@ -10,22 +10,52 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./scheda-utente.component.css']
 })
 export class SchedaUtenteComponent implements OnInit{
-  datiUtente = [ //ipotetici dati dal localstorage
-    {
-      nome: 'Mario',
-      cognome: 'Rossi',
-      email: 'mario.rossi@gmail.com'
-    }
+
+  
+  fintiDatiUtente = [ //ipotetici dati dal localstorage
+  {
+    nome: 'Mario',
+    cognome: 'Rossi',
+    email: 'mario.rossi@gmail.com'
+  }
   ];
-
+  
+  datiUtente: any;
+  
+  constructor() {}
+  
   formNuovoTicket!: FormGroup;
-
+  
   ngOnInit(): void {
+    
+    
     this.formNuovoTicket = new FormGroup({
       descrizione: new FormControl(null, Validators.required),
       data_inserimento: new FormControl(null, Validators.required),
       tipologia: new FormControl(null, Validators.required),
     });
+
+    // const userData = localStorage.getItem('userData');
+    // if (userData) {
+      //   this.datiUtente = JSON.parse(userData);
+      // } else {
+        //   // Se non ci sono dati nella Local Storage, gestisci di conseguenza
+        //   console.log('Nessun dato utente trovato nella Local Storage');
+        // }
+        
+        localStorage.setItem('datiUtente', JSON.stringify({
+          nome: 'Luigi',
+          cognome: 'Rossi',
+          email: 'luigi.rossi@example.com'
+        }));
+
+        const userData = localStorage.getItem('datiUtente');
+        if (userData) {
+          // Converte la stringa JSON in un oggetto JavaScript
+          this.datiUtente = JSON.parse(userData);
+        } else {
+          console.log('Nessun dato utente trovato nella Local Storage');
+        }
   }
 
   datiTicketsAttivi = [ //ipotetici dati dalla select * from ticket dell'utente where data_chiusua = null 
