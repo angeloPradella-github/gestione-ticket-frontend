@@ -20,13 +20,10 @@ import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inseri
     InserimentoUtenteComponent,
     SchedaUtenteComponent,
     HomeAdminComponent,
-    InserimentoTicketFormComponent
+    InserimentoTicketFormComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
