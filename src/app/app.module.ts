@@ -11,6 +11,8 @@ import { SchedaUtenteComponent } from './scheda-utente/scheda-utente.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inserimento-ticket-form.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,7 @@ import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inseri
     HomeAdminComponent,
     InserimentoTicketFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
