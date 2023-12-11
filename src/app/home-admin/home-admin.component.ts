@@ -7,4 +7,28 @@ import { Component } from '@angular/core';
 })
 export class HomeAdminComponent {
 
+  utenti = [
+    {
+      nome : "andrea",
+      cognome : "rossi",
+      password: "pws",
+      email: "mail@mail",
+      ruolo: "utente"
+    },
+    {
+      nome : "giuseppe",
+      cognome : "verdi",
+      password: "pws",
+      email: "mail@mail",
+      ruolo: "admin"
+    },
+    {
+      nome : "roberto",
+      cognome : "grandi",
+      password: "pws",
+      email: "mail@mail",
+      ruolo: "utente"
+    }
+  ]
+
 }
