@@ -1,66 +1,41 @@
-.my-login-page .brand {
-  width: 90px;
-  height: 90px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 40px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  position: relative;
-  z-index: 1;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*------------ Login container ------------*/
+
+.box-area {
+  width: 930px;
 }
 
-.my-login-page .brand img {
-  width: 100%;
+/*------------ Right box ------------*/
+
+.right-box {
+  padding: 40px 30px 40px 40px;
 }
 
-.my-login-page .card-wrapper {
-  width: 400px;
+/*------------ Custom Placeholder ------------*/
+
+::placeholder {
+  font-size: 16px;
 }
 
-.my-login-page .card {
-  border-color: transparent;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+.rounded-4 {
+  border-radius: 20px;
+}
+.rounded-5 {
+  border-radius: 30px;
 }
 
-.my-login-page .card.fat {
-  padding: 10px;
-}
+/*------------ For small screens------------*/
 
-.my-login-page .card .card-title {
-  margin-bottom: 30px;
-}
-
-.my-login-page .form-control {
-  border-width: 2.3px;
-}
-
-.my-login-page .form-group label {
-  width: 100%;
-}
-
-.my-login-page .btn.btn-block {
-  padding: 12px 10px;
-}
-
-.my-login-page .footer {
-  margin: 40px 0;
-  color: #888;
-  text-align: center;
-}
-
-@media screen and (max-width: 425px) {
-  .my-login-page .card-wrapper {
-    width: 90%;
-    margin: 0 auto;
+@media only screen and (max-width: 768px) {
+  .box-area {
+    margin: 0 10px;
   }
-}
-
-@media screen and (max-width: 320px) {
-  .my-login-page .card.fat {
-    padding: 0;
+  .left-box {
+    height: 100px;
+    overflow: hidden;
   }
-
-  .my-login-page .card.fat .card-body {
-    padding: 15px;
+  .right-box {
+    padding: 20px;
   }
 }

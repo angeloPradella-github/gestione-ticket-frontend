@@ -12,6 +12,7 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inserimento-ticket-form.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeAdminComponent,
     InserimentoTicketFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

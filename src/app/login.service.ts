@@ -9,13 +9,15 @@ export class LoginService {
   private utentiMockati = [
     {
       id: 1,
-      email: 'user',
+      email: 'user@user',
+      nome: 'Admin',
       password: 'user',
       ruolo: 'user',
     },
     {
       id: 2,
-      email: 'admin',
+      email: 'admin@admin',
+      nome: 'User',
       password: 'admin',
       ruolo: 'admin',
     },
