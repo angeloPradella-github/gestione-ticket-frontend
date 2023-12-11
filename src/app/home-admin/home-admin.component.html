@@ -1,2 +1,24 @@
-<p>home-admin works!</p>
-sium
+<div class="container mt-5">
+    <div class="jumbotron">
+      <h1 class="display-4">Gestione Utenti</h1>
+      <p class="lead">Benvenuto nella lista degli utenti. Puoi visualizzare, aggiungere, eliminare o modificare gli utenti qui.</p>
+      <hr class="my-4">
+      <a class="btn btn-success btn-lg" [routerLink]="['inserimento-utente']">Aggiungi Utente</a>
+    </div>
+  
+    <!-- Lista degli utenti -->
+    <div *ngFor="let utente of utenti" class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ utente.nome }} {{ utente.cognome }}</h5>
+        <p class="card-text"><strong>Email:</strong> {{ utente.email }}</p>
+        <p class="card-text"><strong>Ruolo:</strong> {{ utente.ruolo }}</p>
+        <div class="btn-group" role="group" aria-label="Azioni">
+          <a class="btn btn-danger" [routerLink]="['/admin/eliminaDACREARE']">Elimina</a>
+          <a class="btn btn-warning" [routerLink]="['/admin/modificaDACREARE']">Modifica</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  

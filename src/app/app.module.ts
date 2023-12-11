@@ -12,6 +12,9 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inserimento-ticket-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { ModificaUtenteModalComponent } from './modifica-utente-modal/modifica-utente-modal.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SchedaUtenteComponent,
     HomeAdminComponent,
     InserimentoTicketFormComponent,
+    ModificaUtenteModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

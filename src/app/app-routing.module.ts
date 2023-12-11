@@ -10,7 +10,7 @@ import { InserimentoTicketFormComponent } from './inserimento-ticket-form/inseri
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'inserimento-utente', component: InserimentoUtenteComponent },
+  { path: 'admin/inserimento-utente', component: InserimentoUtenteComponent },
   { path: 'scheda-utente/:id', component: SchedaUtenteComponent },
   { path: 'admin', component: HomeAdminComponent },
   { path: 'inserimento-ticket', component: InserimentoTicketFormComponent },
