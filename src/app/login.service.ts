@@ -10,14 +10,14 @@ export class LoginService {
     {
       id: 1,
       email: 'user@user',
-      nome: 'Admin',
+      nome: 'User',
       password: 'user',
       ruolo: 'user',
     },
     {
       id: 2,
       email: 'admin@admin',
-      nome: 'User',
+      nome: 'Admin',
       password: 'admin',
       ruolo: 'admin',
     },

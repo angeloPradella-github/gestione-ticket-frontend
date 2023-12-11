@@ -13,7 +13,6 @@ export class GlobalVariablesService {
 
   constructor() {
     this.initFromLocalStorage();
-    // Monitoriamo il localStorage per eventuali cambiamenti
     window.addEventListener('storage', (event) => {
       if (event.key === 'utenteLoggato') {
         this.initFromLocalStorage();
